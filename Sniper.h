@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class Sniper {
+class Snipers {
 private:
     float weight;
     string name;
@@ -17,7 +17,11 @@ private:
         return true;
     }
 public:
-    Sniper(float Vweight, string Vname, float Vcalibr){
+    Snipers(float Vweight = 0, string Vname = "Tomson"){
+        cout<<"Name: " << Vname << "\tWeight: " << Vweight << endl;
+    };
+
+    Snipers(float Vweight, string Vname, float Vcalibr){
         weight = Vweight;
         name = Vname;
         calibr = Vcalibr;
@@ -28,7 +32,7 @@ public:
             cout<<"This product is currently unavailable"<<endl;
         cout<< "called Konstruktor" <<endl;
     }
-    ~Sniper(){
+    ~Snipers(){
         cout<< "called Distruktor" <<endl;
     }
 };

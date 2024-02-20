@@ -12,6 +12,7 @@ int main() {
     AK.Print();
     Mach_guns AR;
     AR.Print();
-    Sniper Barret(12.3, "Barret", 32);
+    Snipers AWM(0);
+    Snipers Barret(12.3, "Barret", 32);
     return 0;
 }

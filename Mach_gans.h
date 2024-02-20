@@ -17,11 +17,8 @@ private:
         return true;
     }
 public:
-    Mach_guns(){
-        weight = 0;
-        name = "null";
-        speed_bullet = 0;
-    }
+    Mach_guns() : weight{0}, name{"null"}, speed_bullet{0}{}
+
     Mach_guns(float weight, string name, int speed_bullet){
         this->weight = weight;
         this->name = name;
