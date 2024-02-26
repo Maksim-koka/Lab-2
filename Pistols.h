@@ -13,7 +13,7 @@ private:
     float weight;
     string name;
     int bar_len;
-    bool There_is(){
+    bool Is_Available(){
         return true;
     }
 public:
@@ -26,9 +26,9 @@ public:
     Pistols(float weight, string name, int bar_len): Pistols(weight, name){
         this->bar_len = bar_len;
     }
-    void Print(){
+    void print(){
         cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << bar_len << endl;
-        if (There_is())
+        if (Is_Available())
             cout<<"The product is available"<<endl;
         else
             cout<<"This product is currently unavailable"<<endl;

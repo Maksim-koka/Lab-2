@@ -7,11 +7,11 @@ using namespace std;
 int main() {
 
     Pistols PP(1.22, "PP9", 23);
-    PP.Print();
+    PP.print();
     Mach_guns AK(23, "AK", 45);
-    AK.Print();
+    AK.print();
     Mach_guns AR;
-    AR.Print();
+    AR.print();
     Snipers AWM(0);
     Snipers Barret(12.3, "Barret", 32);
     return 0;

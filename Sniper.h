@@ -13,7 +13,7 @@ private:
     float weight;
     string name;
     float calibr;
-    bool There_is(){
+    bool Is_Available(){
         return true;
     }
 public:
@@ -26,7 +26,7 @@ public:
         name = Vname;
         calibr = Vcalibr;
         cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << calibr << endl;
-        if (There_is())
+        if (Is_Available())
             cout<<"The product is available"<<endl;
         else
             cout<<"This product is currently unavailable"<<endl;
