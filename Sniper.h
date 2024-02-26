@@ -37,5 +37,4 @@ public:
     }
 };
 
-
 #endif //OOP_SNIPER_H
