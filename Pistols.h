@@ -23,9 +23,10 @@ public:
     Pistols(float weight, string name): Pistols(weight){
         this->name = name;
     }
-    Pistols(float weight, string name, int bar_len): Pistols(weight, name){
+    Pistols(int bar_len){
         this->bar_len = bar_len;
     }
+
     void print(){
         cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << bar_len << endl;
         if (Is_Available())
