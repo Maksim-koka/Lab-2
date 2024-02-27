@@ -10,7 +10,7 @@ using namespace std;
 
 class Snipers {
 private:
-    float weight;
+    static float weight;
     string name;
     float calibr;
     bool Is_Available(){
