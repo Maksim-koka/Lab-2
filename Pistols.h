@@ -16,6 +16,7 @@ private:
     bool Is_Available(){
         return true;
     }
+
 public:
     Pistols(float weight){
         this->weight = weight;

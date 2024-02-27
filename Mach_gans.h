@@ -23,7 +23,7 @@ public:
         this->name = name;
         this->speed_bullet = speed_bullet;
     }
-
+//f
     Mach_guns operator+() const {
         return Mach_guns(+weight, +speed_bullet, +name);
     }
