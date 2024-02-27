@@ -13,9 +13,8 @@ private:
     float weight;
     string name;
     int speed_bullet;
-    bool Is_Available(){
-        return true;
-    }
+    bool Is_Available;
+
 public:
     Mach_guns() : weight{0}, name{"null"}, speed_bullet{0}{}
 
@@ -24,9 +23,9 @@ public:
         this->name = name;
         this->speed_bullet = speed_bullet;
     }
-    void print(){
+    void print() const {
         cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << speed_bullet << endl;
-        if (Is_Available())
+        if (Is_Available)
             cout<<"The product is available"<<endl;
         else
             cout<<"This product is currently unavailable"<<endl;
