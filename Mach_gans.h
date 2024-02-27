@@ -23,6 +23,20 @@ public:
         this->name = name;
         this->speed_bullet = speed_bullet;
     }
+
+    friend ostream& operator<<(ostream& out, const Mach_guns& c) {
+        out << "(" << c.weight << ", " << c.speed_bullet << ")";
+        return out;
+    }
+    // Перевантаження унарного оператора "+"
+    Mach_guns operator+() const {
+        return Mach_guns(+weight, +speed_bullet);
+    }
+    // Перевантаження бінарного оператора "+"
+    Mach_guns operator+(const Mach_guns& other) const {
+        return Mach_guns(weight + other.weight, speed_bullet + other.speed_bullet);
+    }
+
     void print() const {
         cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << speed_bullet << endl;
         if (Is_Available)
