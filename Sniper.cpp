@@ -5,17 +5,12 @@
 #include "Sniper.h"
 using namespace std;
 
-Sniper::Sniper(Sniper&& rifle) {
-    this->weight = rifle.weight;
-    this->name = rifle.name;
-    this->calibr = rifle.calibr;
+Sniper::Sniper(Sniper&& rifle) : weight(rifle.weight), name(rifle.name), calibr(rifle.calibr) {
+    rifle.weight = 3.4;
+    rifle.name = "AMV";
+    rifle.calibr = 7.2;
 
-    rifle.weight = 0;
-    rifle.name = nullptr;
-    rifle.calibr = 0;
 
-    cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << calibr << endl;
-    cout<< "called move constructor" <<endl;
 }
 
 #include "Sniper.h"

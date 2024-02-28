@@ -34,6 +34,9 @@ public:
     ~Sniper(){
         cout<< "called Distruktor" <<endl;
     }
+    string print() const {
+        return name + to_string(weight) + to_string(calibr) ;
+    }
 };
 
 #endif //OOP_SNIPER_H
