@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 
-    Pistols PP(1.22, "PP9", 23);
+    Pistols PP(1.22, 23, "PP9");
     PP.print();
     Mach_guns AK(23, "AK", 45);
     AK.print();

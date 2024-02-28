@@ -21,6 +21,21 @@ public:
         cout<<"Name: " << Vname << "\tWeight: " << Vweight << endl;
     };
 
+    Snipers(const Snipers& other);
+
+    Snipers(Snipers&& other) noexcept {
+        this->weight = other.weight;
+        this->name = other.name;
+        this->calibr = other.calibr;
+
+        other.weight = 0;
+        other.name = nullptr;
+        other.calibr = 0;
+
+        cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << calibr << endl;
+        cout<< "called move constructor" <<endl;
+    }
+
     Snipers(float Vweight, string Vname, float Vcalibr){
         weight = Vweight;
         name = Vname;

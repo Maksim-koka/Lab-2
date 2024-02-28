@@ -24,7 +24,7 @@ public:
     Pistols(float weight, string name): Pistols(weight){
         this->name = name;
     }
-    Pistols(int bar_len){
+    Pistols(int bar_len, float weight, string name): Pistols(weight, name){
         this->bar_len = bar_len;
     }
 

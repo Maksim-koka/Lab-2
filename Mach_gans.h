@@ -23,13 +23,7 @@ public:
         this->name = name;
         this->speed_bullet = speed_bullet;
     }
-//f
-    Mach_guns operator+() const {
-        return Mach_guns(+weight, +speed_bullet, +name);
-    }
-    Mach_guns operator+(const Mach_guns& other) const {
-        return Mach_guns(weight + other.weight, speed_bullet + other.speed_bullet, name + other.name);
-    }
+    
 
     void print() const {
         cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << speed_bullet << endl;
