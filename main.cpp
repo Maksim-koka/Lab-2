@@ -13,8 +13,8 @@ int main() {
     AK.print();
     Mach_guns AR;
     AR.print();
-    Snipers AWM(0);
-    Snipers Barret(12.3, "Barret", 32);
+    Sniper Barett(1.34, "Baret", 32.4);
+    Sniper Sniper4 = move(Barett);
 
     return 0;
 }

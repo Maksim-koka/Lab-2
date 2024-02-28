@@ -12,7 +12,7 @@ class Pistols {
 private:
     float weight;
     string name;
-    int bar_len;
+    float bar_len;
     bool Is_Available(){
         return true;
     }
@@ -24,7 +24,7 @@ public:
     Pistols(float weight, string name): Pistols(weight){
         this->name = name;
     }
-    Pistols(int bar_len, float weight, string name): Pistols(weight, name){
+    Pistols(float bar_len, float weight, string name): Pistols(weight, name){
         this->bar_len = bar_len;
     }
 

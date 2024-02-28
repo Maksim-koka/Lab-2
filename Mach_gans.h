@@ -23,7 +23,7 @@ public:
         this->name = name;
         this->speed_bullet = speed_bullet;
     }
-    
+
 
     void print() const {
         cout<<"Name: " << name << "\tWeight: " << weight << "\tBarrel length: " << speed_bullet << endl;
